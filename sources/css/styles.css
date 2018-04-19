@@ -1,0 +1,270 @@
+/*	CSS RESET	BEGIN*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*	CSS RESET	END*/
+
+/*	IMPORT FONTS	*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,400,700');
+
+
+
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+
+/* FIRST SECTION STYLIZATION BEGINNING 	*/
+
+.section-hello {
+	position: relative;
+	min-height: 850px;
+	overflow: hidden;
+	background: url(../img/bg2.png) no-repeat;
+	background-size: cover;
+}
+
+.section-hello .wrapper {
+
+}
+
+.title {
+	display: inline-block;
+	margin-left: 170px;
+	margin-top: 200px;
+	color: #fff;
+}
+
+.title__photo {
+	width: 120px;
+	height: 120px;
+	background: url(../img/photo.jpg) no-repeat;
+	background-size: 100%;
+	background-position: center;
+	border-radius: 60px;
+	margin-bottom: 25px;
+}
+
+.title__header {
+	font-size: 61px;
+	font-weight: 700;
+	line-height: 61px;
+	margin-bottom: 12px;
+}
+
+.title__text {
+	font-size: 12px;
+	letter-spacing: 0.025em;
+	line-height: 20px;
+	font-weight: 400;
+	color: #7c7c7c;
+}
+
+
+.social-links {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	border-top: 2px solid #7c7c7c;
+	//background-color: #4e4;
+}
+
+.social-links .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 10px;	
+}
+
+.social-links__item {
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	background-color: #222;
+	margin-right: 30px;
+	color: #7c7c7c;
+	text-align: center;
+	font-size: 25px;
+	line-height: 49px;
+	transition: background 0.35s ease-out, color 0.35s ease-out;
+}
+
+.social-links__item:hover {
+	color: #fff;
+}
+
+.facebook:hover {
+	background: #4267B2;
+}
+
+.instagram:hover {
+	background: linear-gradient(45deg, #ccac02, #7F3BB2);
+}
+
+.telegram:hover {
+	background: #2691C6;
+}
+
+.github:hover {
+	background: #24292E;
+}
+
+.vk:hover {
+	background: #4A76A8;
+}
+/* FIRST SECTION STYLIZATION END*/
+
+/*	SECTION ABOUT STYLIZATION	BEGINNING*/
+
+.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 900px;
+	background: url(../img/bg.png) top center no-repeat;
+	background-size: cover;
+	//margin-top: 200px; 
+}
+
+.substrate {
+	background-color: #181818;
+	min-height: 450px;
+}
+
+.substrate__flex {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.column-about{
+	width: 30%;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	padding-right: 65px;
+	border-right: 1px solid #404040;
+}
+
+.column-about__heading {
+	max-width: 250px;
+	font-size: 52px;
+	line-height: 60px;
+	font-weight: 100;
+	color: #fff;
+	padding-bottom: 45px;
+	
+}
+
+.column-about__text {
+	max-width: 250px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #7c7c7c;
+}
+
+.column-personal-data {
+	padding-left: 100px;
+	padding-bottom: 80px;
+
+}
+
+.about__photo {
+	width: 90px;
+	height: 90px;
+	background: url(../img/photo.jpg) no-repeat;
+	background-size: 100%;
+	background-position: center;
+	border-radius: 45px;
+	margin-bottom: 25px;
+}
+
+.personal-data-table {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.personal-data-table__row {
+	height: 60px;
+	//padding-bottom: 10px;
+}
+
+.personal-data-table__column {
+	padding-bottom: 13px;
+	vertical-align: bottom;
+	text-align: left;
+
+}
+
+.col-1 {
+	width: 100px;
+	color: #7c7c7c;
+}
+
+.col-2 {
+	border-bottom: 1px solid #404040;
+	color: #fff;
+	width: 220px;
+}
+
+
+
+/*	SECTION ABOUT STYLIZATION	END*/
+
+
+
